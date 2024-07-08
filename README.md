@@ -18,8 +18,8 @@ const MyApp = () => {
     </div>
   );
 };
-
-Prerequisites and Setup
+```
+## Prerequisites and Setup
 This project assumes you are familiar with and have installed:
 
 Code editor / IDE (this tutorial uses VS Code but any IDE will work)
