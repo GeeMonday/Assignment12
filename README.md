@@ -22,13 +22,13 @@ const MyApp = () => {
 ## Prerequisites and Setup
 This project assumes you are familiar with and have installed:
 
-Code editor / IDE (this tutorial uses VS Code but any IDE will work)
-NPM (NPM is installed when you install Node.js on your machine)
-Installing packages (presume you know how to add packages to a JavaScript project with npm install)
-Bash terminal (or another terminal you are comfortable with for running commands)
-Git (we will be creating a Git repository on our machine and publishing it to GitHub, though all instructions will be provided on how to follow along)
-React (how to create simple components using JSX)
-TypeScript (how to create an object interface with simple properties)
+ >Code editor / IDE (this tutorial uses VS Code but any IDE will work)
+ >NPM (NPM is installed when you install Node.js on your machine)
+ >Installing packages (presume you know how to add packages to a JavaScript project with npm install)
+ >Bash terminal (or another terminal you are comfortable with for running commands)
+ >Git (we will be creating a Git repository on our machine and publishing it to GitHub, though all instructions will be provided on how to follow along)
+ >React (how to create simple components using JSX)
+ >TypeScript (how to create an object interface with simple properties)
 
 
 
