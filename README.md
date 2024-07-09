@@ -107,7 +107,8 @@ If you would like to learn more about the many options in a tsconfig.json file, 
 You may notice, depending on your IDE, that immediately after initializing, you begin to get errors in your project. There are two reasons for that: the first is that TypeScript isn't configured to understand React by default, and the second is that we haven't defined our method for handling modules yet, so it may not understand how to manage all of our exports.
 
 To fix this, we are going to add the following values to tsconfig.json:
-  {
+```bash
+{
   "compilerOptions": {
     // Default
     "target": "es5",
@@ -126,22 +127,22 @@ To fix this, we are going to add the following values to tsconfig.json:
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
-   }
   }
-
+}
+```
 I have separated these values into a couple of different sections based on the default tsconfig.json created using the most recent version of TypeScript as of this writing (4.4). The values commented as default should already be set for you by default (you will want to double-check and make sure, however).
 
 The values marked added are new values that we need for our project. We'll briefly outline why we need them:
 
-1. "jsx": "react" -- Transform JSX into React code
-2. "module": "ESNext" -- Generate modern JS modules for our library
-3. "declaration": true -- Output a .d.ts file for our library types
-4. "declarationDir": "types" -- Where to place the .d.ts files
-5. "sourceMap": true -- Mapping JS code back to its TS file origins for debugging
-6. "outDir": "dist" -- Directory where the project will be generated
-7. "moduleResolution": "node" -- Follow node.js rules for finding modules
-8. "allowSyntheticDefaultImports": true -- Assumes default exports if none are created manually
-9. "emitDeclarationOnly": true -- Don't generate JS (Rollup will do that) only export type declarations
+  1. "jsx": "react" -- Transform JSX into React code
+  2. "module": "ESNext" -- Generate modern JS modules for our library
+  3. "declaration": true -- Output a .d.ts file for our library types
+  4. "declarationDir": "types" -- Where to place the .d.ts files
+  5. "sourceMap": true -- Mapping JS code back to its TS file origins for debugging
+  6. "outDir": "dist" -- Directory where the project will be generated 
+  7. "moduleResolution": "node" -- Follow node.js rules for finding modules
+  8. "allowSyntheticDefaultImports": true -- Assumes default exports if none are created manually
+  9. "emitDeclarationOnly": true -- Don't generate JS (Rollup will do that) only export type declarations
 Once you add those values to your TS configuration file, you should see the errors in Button.tsx and other files immediately disappear.
 
 
