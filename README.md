@@ -48,15 +48,15 @@ Now we can create our first component. Because we are creating a library, we are
 
 Within the root of your project, create the following file structure:
 .
-├── src
-│   ├── components
-│   │   ├── Button
-│   │   │   ├── Button.tsx
-│   │   │   └── index.ts
-│   │   └── index.ts
-│   └── index.ts
-├── package.json
-└── package-lock.json
+### ├── src
+### │   ├── components
+### │   │   ├── Button
+### │   │   │   ├── Button.tsx
+### │   │   │   └── index.ts
+### │   │   └── index.ts
+### │   └── index.ts
+### ├── package.json
+### └── package-lock.json
 
 
 
