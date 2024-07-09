@@ -47,16 +47,16 @@ npm install react typescript @types/react --save-dev
 Now we can create our first component. Because we are creating a library, we are going to create index files for each tier and export our components from each one to make it as easy as possible for the people using our library to import them.
 
 Within the root of your project, create the following file structure:
-.
-### ├── src
-### │   ├── components
-### │   │   ├── Button
-### │   │   │   ├── Button.tsx
-### │   │   │   └── index.ts
-### │   │   └── index.ts
-### │   └── index.ts
-### ├── package.json
-### └── package-lock.json
+###### .
+###### ├── src
+###### │   ├── components
+###### │   │   ├── Button
+###### │   │   │   ├── Button.tsx
+###### │   │   │   └── index.ts
+###### │   │   └── index.ts
+###### │   └── index.ts
+###### ├── package.json
+###### └── package-lock.json
 
 
 
