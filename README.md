@@ -145,7 +145,28 @@ The values marked added are new values that we need for our project. We'll brief
   9. "emitDeclarationOnly": true -- Don't generate JS (Rollup will do that) only export type declarations
 Once you add those values to your TS configuration file, you should see the errors in Button.tsx and other files immediately disappear.
 
+## Version Control Setup
+To keep track of your React component library in VS Code using Git and GitHub, follow these steps:
 
+Initialize a Git Repository
+  git init
+
+Add Files to the Repository
+  git add .
+
+Commit the Changes
+  git commit -m "Initial commit"
+
+Add Remote Repository
+  git remote add origin https://github.com/your-username/your-project-name.git
+
+Rename the Default Branch to main
+  git branch -m master main
+
+Push the Changes to the Remote Repository
+  git push -u origin main
+
+By following these steps, you will have a fully functioning React component library that you can use in all your future React projects.
 
 
 
