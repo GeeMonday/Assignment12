@@ -149,24 +149,52 @@ Once you add those values to your TS configuration file, you should see the erro
 To keep track of your React component library in VS Code using Git and GitHub, follow these steps:
 
 Initialize a Git Repository
+```bash
   git init
+  ```
 
 Add Files to the Repository
+```bash
   git add .
+  ```
 
 Commit the Changes
+```bash
   git commit -m "Initial commit"
+  ```
 
 Add Remote Repository
+```bash
   git remote add origin https://github.com/your-username/your-project-name.git
+  ```
 
 Rename the Default Branch to main
+```bash
   git branch -m master main
+  ```
 
 Push the Changes to the Remote Repository
+```bash
   git push -u origin main
+  ```
 
 By following these steps, you will have a fully functioning React component library that you can use in all your future React projects.
+
+## Adding Rollup
+ Next we will add rollup to our project. If you've never used rollup before, it's very similar to webpack in that it is a tool for bundling individual Javascript modules into a single source that a browser is better able to understand.
+
+Though both tools can accomplish the same goal depending on configuration, typically webpack is used for bundling applications while rollup is particularly suited for bundling libraries (like ours). That's why we've chosen rollup.
+
+Also similar to webpack, rollup uses a plugin ecosystem. By design rollup does not know how to do everything, it relies on plugins installed individually to add the functionality that you need.
+
+We are going to rely on four plugins for the initial configuration of our library (more will be added later):
+
+>@rollup/plugin-node-resolve - Uses the node resolution algorithm for modules
+>@rollup/plugin-typescript - Teaches rollup how to process Typescript files
+>@rollup/plugin-commonjs - Converts commonjs modules to ES6 modules
+>rollup-plugin-dts - rollup your .d.ts files
+### Important Update!
+As time passes, some of these tools have been updated and the exact instructions as written below no longer work. Many people in the comments have graciously taken the time to add corrections, I would highly recommend you read this comment in particular to educate yourself about the errors and changes you may encounter.
 
 
 
